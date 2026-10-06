@@ -764,7 +764,7 @@ begin
                         videoout_out.r      <= (others => '0');
                         videoout_out.g      <= (others => '0');
                         videoout_out.b      <= (others => '0');
-                     elsif (videoout_settings.hCrop = '1' and xCount >= videoout_out.DisplayWidth) then
+                     elsif (videoout_settings.hCrop = '1' and xCount >= videoout_out.DisplayWidth + 8) then
                         videoout_out.r      <= (others => '0');
                         videoout_out.g      <= (others => '0');
                         videoout_out.b      <= (others => '0');
